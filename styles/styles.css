@@ -61,6 +61,28 @@ img{
     grid-row: span 1;
 }
 
+.grid-container{
+    
+    /* padding: 20px; */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+}
+#sidebar{
+    grid-row: span 5;
+}
+
+#footer{
+    grid-column: span 3;
+}
+.box-grid{
+    padding: 10px;
+    
+    background-color: grey;
+
+}
+
 @media screen  and (max-width:576px){
     .container{
         flex-direction: column;
